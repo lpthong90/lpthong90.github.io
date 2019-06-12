@@ -1,1 +1,16 @@
-theme: jekyll-theme-hacker
+# Site settings
+title: Le Phi Thong - Blog
+email: lpthong90@gmail.com
+description: >
+  Data Engineer - Ho Chi Minh, Vietnam
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://thongle.github.io" # the base hostname & protocol for your site
+twitter_username: Thong_Le_90
+github_username:  ThongLe
+linkedin_url: in/tony-le-46008367
+
+# Build settings
+markdown: kramdown
+kramdown:
+   syntax_highlighter_opts:
+      disable : true
