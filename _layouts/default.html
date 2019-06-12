@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{%- include head.html -%}
+</head>
+<body>
+	<main class="container">
+		<section class="about">
+			<img class="avatar" src="{{ "/assets/portfolio.png" | relative_url }}" alt="{{ site.plainwhite.name }}">
+			<h2>{{ site.plainwhite.name }}</h2>
+			<p class="tagline">{{ site.plainwhite.tagline }}</p>
+			<ul class="social">
+				<a href="https://github.com/{{ site.plainwhite.social_links.github }}"><li><i class="fab fa-github-square"></i></li></a>
+				<a href="https://www.linkedin.com/{{ site.plainwhite.social_links.linkedIn }}"><li><i class="fab fa-linkedin"></i></li></a>
+				<a href="https://twitter.com/{{ site.plainwhite.social_links.twitter }}"><li><i class="fab fa-twitter-square"></i></li></a>
+				<a href="https://medium.com/@{{ site.plainwhite.social_links.medium }}"><li><i class="fab fa-medium"></i></li></a>
+
+				<!-- <a href="https://github.com/{{ site.plainwhite.social_links.github }}"><li><i class="icon-github-circled"></i></li></a>
+				<a href="https://www.linkedin.com/{{ site.plainwhite.social_links.linkedIn }}"><li><i class="icon-linkedin-squared"></i></li></a>
+				<a href="https://twitter.com/{{ site.plainwhite.social_links.twitter }}"><li><i class="icon-twitter-squared"></i></li></a>
+				<a href="https://medium.com/@{{ site.plainwhite.social_links.medium }}"><li><i class="icon-medium-squared"></i></li></a> -->
+			</ul>
+			<p>&copy; 2019</p>
+
+			<ul class="skills">
+				<li><img src="{{ "/assets/images/python.png" | relative_url }}" alt="{{ site.plainwhite.skills.python }}"></li>
+				<li><img src="{{ "/assets/images/javascript.png" | relative_url }}" alt="{{ site.plainwhite.skills.javascript }}"></li>
+				<li><img src="{{ "/assets/images/go.png" | relative_url }}" alt="{{ site.plainwhite.skills.go }}"></li>
+			</ul>
+			<ul class="skills">
+				<li><img src="{{ "/assets/images/django.png" | relative_url }}" alt="{{ site.plainwhite.skills.django }}"></li>
+				<li><img src="{{ "/assets/images/flask.jpg" | relative_url }}" alt="{{ site.plainwhite.skills.flask }}"></li>
+				<li><img src="{{ "/assets/images/ror.png" | relative_url }}" alt="{{ site.plainwhite.skills.ror }}"></li>
+			</ul>
+			<!-- <ul class="skills">
+				<li><img src="{{ "/assets/images/hadoop.png" | relative_url }}" alt="{{ site.plainwhite.skills.hadoop }}"></li>
+				<li><img src="{{ "/assets/images/spark.png" | relative_url }}" alt="{{ site.plainwhite.skills.spark }}"></li>
+			</ul> -->
+			<ul class="skills">
+				<li><img src="{{ "/assets/images/aws.jpg" | relative_url }}" alt="{{ site.plainwhite.skills.aws }}"></li>
+				<!-- <li><img src="{{ "/assets/images/gae.png" | relative_url }}" alt="{{ site.plainwhite.skills.gae }}"></li> -->
+			</ul>
+		</section>
+		<section class="content">
+			{{ content }}
+		</section>
+	</main>
+	{%- if site.plainwhite.analytics_id -%}
+	<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.plainwhite.analytics_id }}"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', '{{ site.plainwhite.analytics_id }}');
+	</script>
+	{%- endif -%}
+</body>
+</html>
