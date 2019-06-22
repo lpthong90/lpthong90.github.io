@@ -66,3 +66,7 @@ theme: plainwhite
 plugins:
   - jekyll-seo-tag
 #  - jekyll-feed
+
+collections:
+  experiences:
+    output: true
