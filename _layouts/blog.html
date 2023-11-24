@@ -2,4 +2,17 @@
 layout: default
 ---
 
-Blog
+{%- if page.title -%}
+<h1 class="page-heading">{{ page.title }}</h1>
+{%- endif -%}
+
+{{ content }}
+
+{%- if site.experiences.size > 0 -%}
+<ul class="posts">
+	<li>
+		<h1 id="posts-label">Blog</h1>
+	</li>
+
+</ul>
+{%- endif -%}

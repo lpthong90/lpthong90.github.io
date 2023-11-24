@@ -8,12 +8,109 @@ layout: default
 
 {{ content }}
 
-{%- if site.experiences.size > 0 -%}
+<!-- {%- if site.experiences.size > 0 -%} -->
 <ul class="posts">
-	{%- for experience in site.experiences -%}
 	<li>
 		<h1 id="posts-label">Experience</h1>
 	</li>
+
+	<li>
+		<a class="post-link">
+			<h2 class="post-title">Technical lead</h2>
+		</a>
+		Company: <a class="post-link" href=""> <b>Fiahub</b> </a>
+		<br><br>
+		<div class="post-meta">
+			<div class="post-date"><i class="icon-calendar"></i>Apr 23, 2018 - Apr 23, 2020</div>
+			<!-- <ul class="post-categories">
+				{%- for tag in experience.categories -%}
+				<li>{{ tag }}</li>
+				{%- endfor -%}
+			</ul> -->
+		</div>
+		<div class="post">
+			<!-- {%- if site.show_excerpts -%}
+			{{ experience.excerpt }}
+			{%- endif -%} -->
+			<p>• Responsible for reliability, scalability, high availability, maintainability, and performance of released products.</p>
+			<p>• Responsible for design and implement low latency systems such as news based trading bots.</p>
+			<p>• Assisted a multitude of development/data teams with observability, cloud, CI/CD, and fulfilled other ad-hoc requests as needed.</p>
+		</div>
+	</li>
+
+	<li>
+		<a class="post-link">
+			<h2 class="post-title">Senior Software Engineer</h2>
+		</a>
+		Company: <a class="post-link" href=""> <b>Fiahub</b> </a>
+		<br><br>
+		<div class="post-meta">
+			<div class="post-date"><i class="icon-calendar"></i>Apr 23, 2018 - Apr 23, 2020</div>
+			<!-- <ul class="post-categories">
+				{%- for tag in experience.categories -%}
+				<li>{{ tag }}</li>
+				{%- endfor -%}
+			</ul> -->
+		</div>
+		<div class="post">
+			<!-- {%- if site.show_excerpts -%}
+			{{ experience.excerpt }}
+			{%- endif -%} -->
+			<p>• Responsible for reliability, scalability, high availability, maintainability, and performance of released products.</p>
+			<p>• Responsible for design and implement low latency systems such as news based trading bots.</p>
+			<p>• Assisted a multitude of development/data teams with observability, cloud, CI/CD, and fulfilled other ad-hoc requests as needed.</p>
+		</div>
+	</li>
+
+	<li>
+		<a class="post-link">
+			<h2 class="post-title">Software Engineer</h2>
+		</a>
+		Company: <a class="post-link" href=""> <b>Unicen SMU Labs</b> </a>
+		<br><br>
+		<div class="post-meta">
+			<div class="post-date"><i class="icon-calendar"></i>Apr 23, 2018 - Apr 23, 2020</div>
+			<!-- <ul class="post-categories">
+				{%- for tag in experience.categories -%}
+				<li>{{ tag }}</li>
+				{%- endfor -%}
+			</ul> -->
+		</div>
+		<div class="post">
+			<!-- {%- if site.show_excerpts -%}
+			{{ experience.excerpt }}
+			{%- endif -%} -->
+			<p>• Responsible for reliability, scalability, high availability, maintainability, and performance of released products.</p>
+			<p>• Responsible for design and implement low latency systems such as news based trading bots.</p>
+			<p>• Assisted a multitude of development/data teams with observability, cloud, CI/CD, and fulfilled other ad-hoc requests as needed.</p>
+		</div>
+	</li>
+
+	<li>
+		<a class="post-link">
+			<h2 class="post-title">Software Engineer</h2>
+		</a>
+		Company: <a class="post-link" href=""> <b>Emichat</b> </a>
+		<br><br>
+		<div class="post-meta">
+			<div class="post-date"><i class="icon-calendar"></i>Apr 23, 2018 - Apr 23, 2020</div>
+			<!-- <ul class="post-categories">
+				{%- for tag in experience.categories -%}
+				<li>{{ tag }}</li>
+				{%- endfor -%}
+			</ul> -->
+		</div>
+		<div class="post">
+			<!-- {%- if site.show_excerpts -%}
+			{{ experience.excerpt }}
+			{%- endif -%} -->
+			<p>• Responsible for reliability, scalability, high availability, maintainability, and performance of released products.</p>
+			<p>• Responsible for design and implement low latency systems such as news based trading bots.</p>
+			<p>• Assisted a multitude of development/data teams with observability, cloud, CI/CD, and fulfilled other ad-hoc requests as needed.</p>
+		</div>
+	</li>
+
+	<!-- {%- for experience in site.experiences -%}
 	<li>
 		{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 		<a class="post-link" href="{{ experience.url | relative_url }}">
@@ -24,12 +121,12 @@ layout: default
     </a>
     <br><br>
 		<div class="post-meta">
+			<div class="post-date"><i class="icon-calendar"></i>{{ experience.from_date | date: date_format }} - {{ experience.to_date | date: date_format }}</div>
 			<ul class="post-categories">
 				{%- for tag in experience.categories -%}
 				<li>{{ tag }}</li>
 				{%- endfor -%}
 			</ul>
-			<div class="post-date"><i class="icon-calendar"></i>{{ experience.from_date | date: date_format }} - {{ experience.to_date | date: date_format }}</div>
 		</div>
 		<div class="post">
 			{%- if site.show_excerpts -%}
@@ -37,7 +134,7 @@ layout: default
 			{%- endif -%}
 		</div>
 	</li>
-	{%- endfor -%}
+	{%- endfor -%} -->
 </ul>
 
-{%- endif -%}
+<!-- {%- endif -%} -->

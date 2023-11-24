@@ -1,4 +1,4 @@
-title: Le Phi Thong's Blog
+title: Le Phi Thong's Space
 author: ThongLe
 email: lpthong90@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
@@ -19,8 +19,8 @@ plainwhite:
 
   # generate social links in footer
   social_links:
-    twitter: Thong_Le_90
-    github:  ThongLe
+    twitter: lpthong90
+    github:  lpthong90
     linkedIn: in/lpthong90
     medium: lpthong90
     rss: rss
@@ -68,5 +68,7 @@ plugins:
 #  - jekyll-feed
 
 collections:
+  projects:
+    output: true
   experiences:
     output: true

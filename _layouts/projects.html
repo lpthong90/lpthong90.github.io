@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+{%- if page.title -%}
+<h1 class="page-heading">{{ page.title }}</h1>
+{%- endif -%}
+
+{{ content }}
+
+{%- if site.projects.size > 0 -%}
+<ul class="posts">
+	<li>
+		<h1 id="posts-label">Projects</h1>
+	</li>
+	{%- for experience in site.projects -%}
+	<li>
+		{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+		<a class="post-link" href="{{ experience.url | relative_url }}">
+			<h2 class="post-title">{{ experience.title | escape }}</h2>
+		</a>
+    Company: <a class="post-link" href="{{ experience.company_url | relative_url }}">
+      <b>{{ experience.company | escape }}</b>
+    </a>
+    <br><br>
+		<div class="post-meta">
+			<div class="post-date"><i class="icon-calendar"></i>{{ experience.from_date | date: date_format }} - {{ experience.to_date | date: date_format }}</div>
+			<ul class="post-categories">
+				{%- for tag in experience.categories -%}
+				<li>{{ tag }}</li>
+				{%- endfor -%}
+			</ul>
+		</div>
+		<div class="post">
+			{%- if site.show_excerpts -%}
+			{{ experience.excerpt }}
+			{%- endif -%}
+		</div>
+	</li>
+	{%- endfor -%}
+</ul>
+
+{%- endif -%}

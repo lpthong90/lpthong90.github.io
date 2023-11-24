@@ -11,12 +11,12 @@ layout: default
   </a>
   <br><br>
   <div class="post-meta">
+    <div class="post-date"><i class="icon-calendar"></i>{{ page.from_date | date: date_format }} - {{ page.to_date | date: date_format }}</div>
     <ul class="post-categories">
       {%- for tag in page.categories -%}
       <li>{{ tag }}</li>
       {%- endfor -%}
     </ul>
-    <div class="post-date"><i class="icon-calendar"></i>{{ page.from_date | date: date_format }} - {{ page.to_date | date: date_format }}</div>
   </div>
   <div class="post">
     {{ content }}
