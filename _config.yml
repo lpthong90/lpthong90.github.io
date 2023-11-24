@@ -62,7 +62,8 @@ plainwhite:
 
 # Build settings
 # theme: plainwhite
-remote_theme: samarsault/plainwhite-jekyll
+# remote_theme: samarsault/plainwhite-jekyll
+remote_theme: lpthong90/plainwhite-jekyll
 
 plugins:
   - jekyll-seo-tag
