@@ -30,19 +30,23 @@
 			<p>====</p>
 
 			<ul class="skills">
+				<li><img src="{{ "/assets/images/ror.png" | relative_url }}" alt="{{ site.plainwhite.skills.ror }}"></li>
+				<li><img src="{{ "/assets/images/django.png" | relative_url }}" alt="{{ site.plainwhite.skills.django }}"></li>
+				<li><img src="{{ "/assets/images/flask.jpg" | relative_url }}" alt="{{ site.plainwhite.skills.flask }}"></li>
+			</ul>
+			<ul class="skills">
 				<li><img src="{{ "/assets/images/python.png" | relative_url }}" alt="{{ site.plainwhite.skills.python }}"></li>
 				<li><img src="{{ "/assets/images/javascript.png" | relative_url }}" alt="{{ site.plainwhite.skills.javascript }}"></li>
 				<li><img src="{{ "/assets/images/go.png" | relative_url }}" alt="{{ site.plainwhite.skills.go }}"></li>
-			</ul>
-			<ul class="skills">
-				<li><img src="{{ "/assets/images/django.png" | relative_url }}" alt="{{ site.plainwhite.skills.django }}"></li>
-				<li><img src="{{ "/assets/images/flask.jpg" | relative_url }}" alt="{{ site.plainwhite.skills.flask }}"></li>
-				<li><img src="{{ "/assets/images/ror.png" | relative_url }}" alt="{{ site.plainwhite.skills.ror }}"></li>
 			</ul>
 			<!-- <ul class="skills">
 				<li><img src="{{ "/assets/images/hadoop.png" | relative_url }}" alt="{{ site.plainwhite.skills.hadoop }}"></li>
 				<li><img src="{{ "/assets/images/spark.png" | relative_url }}" alt="{{ site.plainwhite.skills.spark }}"></li>
 			</ul> -->
+			<ul class="skills">
+				<li><img src="{{ "/assets/images/docker.png" | relative_url }}" alt="{{ site.plainwhite.skills.docker }}"></li>
+				<li><img src="{{ "/assets/images/k8s.png" | relative_url }}" alt="{{ site.plainwhite.skills.k8s }}"></li>
+			</ul>
 			<ul class="skills">
 				<li><img src="{{ "/assets/images/aws.jpg" | relative_url }}" alt="{{ site.plainwhite.skills.aws }}"></li>
 				<!-- <li><img src="{{ "/assets/images/gae.png" | relative_url }}" alt="{{ site.plainwhite.skills.gae }}"></li> -->
@@ -77,5 +81,7 @@
 		gtag('config', '{{ site.plainwhite.analytics_id }}');
 	</script>
 	{%- endif -%}
+	<script src="{{ "/assets/js/termynal.js" | relative_url }}" data-termynal-container="#termynal"></script>
+	<script src="{{ "/assets/js/custom.js" | relative_url }}"></script>
 </body>
 </html>

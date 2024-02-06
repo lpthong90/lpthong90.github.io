@@ -1,5 +1,5 @@
-title: Le Phi Thong's Space
-author: ThongLe
+title: Le Phi Thong
+author: Le Phi Thong
 email: lpthong90@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
   Write an awesome description for your new site here. You can edit this
@@ -50,6 +50,8 @@ plainwhite:
     ror: ruby on rails
     flask: flask
     redis: redis
+    docker: docker
+    k8s: kubernetes
     aws: amazon web services
     gae: google app engine
     hadoop: hadoop

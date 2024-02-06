@@ -15,16 +15,30 @@ layout: default
 	</li>
 	{%- for project in site.projects -%}
 	<li>
-		{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+		<!-- {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%} -->
 		<a class="post-link" href="{{ project.url | relative_url }}">
-			<h2 class="post-title">{{ project.title | escape }}</h2>
+			<h2 class="post-title">
+				{%- if project.logo_url -%}
+					<img class="project-logo" src="{{ project.logo_url | relative_url }}" alt="{{ project.title | escape }}">
+				{%- endif -%}
+				<span> {{ project.title | escape }}</span></h2>
 		</a>
-    Company: <a class="post-link" href="{{ project.company_url | relative_url }}">
-      <b>{{ project.company | escape }}</b>
-    </a>
-    <br><br>
+    <p>
+			{%- if project.company -%}
+				Company: <a class="post-link" href="{{ project.company_url | relative_url }}">
+				<b>{{ project.company | escape }}</b>
+			</a>
+			{%- endif -%}
+			{%- if project.repo_url -%}
+			<!-- <a href="https://github.com/{{ site.plainwhite.social_links.github }}/{{ project.repo_name }}"><i style="font-size: 34px" class="fab fa-github-square"></i> {{ site.plainwhite.social_links.github }}/{{ project.repo_name }} </a> -->
+			Repo: <a href="{{ project.repo_url }}">
+				<b>{{ site.plainwhite.social_links.github }}/{{ project.repo_name | escape }}</b>
+			</a>
+			{%- endif -%}
+		</p>
 		<div class="post-meta">
-			<div class="post-date"><i class="icon-calendar"></i>{{ project.from_date | date: date_format }} - {{ project.to_date | date: date_format }}</div>
+			<!-- <div class="post-date"><i class="icon-calendar"></i>{{ project.from_date | date: date_format }} - {{ project.to_date | date: date_format }}</div> -->
+			<div class="post-date"></div>
 			<ul class="post-categories">
 				{%- for tag in project.categories -%}
 				<li>{{ tag }}</li>
