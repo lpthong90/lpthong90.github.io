@@ -49,6 +49,7 @@ plainwhite:
     javascript: javascript
     ror: ruby on rails
     flask: flask
+    fastapi: fastapi
     redis: redis
     docker: docker
     k8s: kubernetes

@@ -1,0 +1,158 @@
+@import 'ext/fonts';
+@import 'ext/normalize';
+@import 'syntax';
+
+$meCenterLeft: 50%; // 336px;
+$meCenterTop: 50%; // 163px;
+
+$rorTime: 8s;
+$fastapiTime: 10s;
+$djangoTime: 12s;
+
+$pythonTime: 10s;
+
+$awsTime: 8s;
+$gcpTime: 14s;
+
+$frameworkRadius: 180px;
+$languageRadius: 125px;
+$cloudRadius: 50px;
+
+#skills-canvas {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  width: 100%; // 830px;
+  border: none;
+  margin: 0 auto;
+  height: 450px;
+  overflow: hidden;
+}
+
+#me {
+  position: absolute;
+  left: $meCenterLeft;
+  top: $meCenterTop;
+}
+
+.skill {
+  width: 30px;
+  border-radius: 50%;
+  position: absolute;
+  left: $meCenterLeft;
+  top: $meCenterTop;
+}
+
+.ror {
+  -webkit-animation: framework $rorTime linear infinite; /* Chrome, Safari 5 */
+     -moz-animation: framework $rorTime linear infinite; /* Firefox 5-15 */
+       -o-animation: framework $rorTime linear infinite; /* Opera 12+ */
+          animation: framework $rorTime linear infinite; /* Chrome, Firefox 16+, 
+                                                    IE 10+, Safari 5 */
+}
+
+.fastapi {
+  -webkit-animation: framework $fastapiTime linear infinite; /* Chrome, Safari 5 */
+     -moz-animation: framework $fastapiTime linear infinite; /* Firefox 5-15 */
+       -o-animation: framework $fastapiTime linear infinite; /* Opera 12+ */
+          animation: framework $fastapiTime linear infinite; /* Chrome, Firefox 16+, 
+                                                    IE 10+, Safari 5 */
+}
+
+.django {
+  -webkit-animation: framework $djangoTime linear infinite; /* Chrome, Safari 5 */
+     -moz-animation: framework $djangoTime linear infinite; /* Firefox 5-15 */
+       -o-animation: framework $djangoTime linear infinite; /* Opera 12+ */
+          animation: framework $djangoTime linear infinite; /* Chrome, Firefox 16+, 
+                                                    IE 10+, Safari 5 */
+}
+
+.python {
+  -webkit-animation: language $pythonTime linear infinite; /* Chrome, Safari 5 */
+     -moz-animation: language $pythonTime linear infinite; /* Firefox 5-15 */
+       -o-animation: language $pythonTime linear infinite; /* Opera 12+ */
+          animation: language $pythonTime linear infinite; /* Chrome, Firefox 16+, 
+                                                    IE 10+, Safari 5 */
+}
+
+
+.aws {
+  -webkit-animation: cloud $awsTime linear infinite; /* Chrome, Safari 5 */
+     -moz-animation: cloud $awsTime linear infinite; /* Firefox 5-15 */
+       -o-animation: cloud $awsTime linear infinite; /* Opera 12+ */
+          animation: cloud $awsTime linear infinite; /* Chrome, Firefox 16+, 
+                                                    IE 10+, Safari 5 */
+}
+.gcp {
+  -webkit-animation: cloud $gcpTime linear infinite; /* Chrome, Safari 5 */
+     -moz-animation: cloud $gcpTime linear infinite; /* Firefox 5-15 */
+       -o-animation: cloud $gcpTime linear infinite; /* Opera 12+ */
+          animation: cloud $gcpTime linear infinite; /* Chrome, Firefox 16+, 
+                                                    IE 10+, Safari 5 */
+}
+
+
+/*
+* Set up the keyframes to actually describe the begining and end states of 
+* the animation.  The browser will interpolate all the frames between these 
+* points.  Again, remember your vendor-specific prefixes for now!
+*/
+@-webkit-keyframes framework {
+  from { -webkit-transform: rotate(0deg) translateX($frameworkRadius) rotate(0deg); }
+  to   { -webkit-transform: rotate(360deg) translateX($frameworkRadius) rotate(-360deg); }
+}
+
+@-moz-keyframes framework {
+  from { -moz-transform: rotate(0deg) translateX($frameworkRadius) rotate(0deg); }
+  to   { -moz-transform: rotate(360deg) translateX($frameworkRadius) rotate(-360deg); }
+}
+
+@-o-keyframes framework {
+  from { -o-transform: rotate(0deg) translateX($frameworkRadius) rotate(0deg); }
+  to   { -o-transform: rotate(360deg) translateX($frameworkRadius) rotate(-360deg); }
+}
+
+@keyframes framework {
+  from { transform: rotate(0deg) translateX($frameworkRadius) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX($frameworkRadius) rotate(-360deg); }
+}
+
+@-webkit-keyframes language {
+  from { -webkit-transform: rotate(0deg) translateX($languageRadius) rotate(0deg); }
+  to   { -webkit-transform: rotate(360deg) translateX($languageRadius) rotate(-360deg); }
+}
+
+@-moz-keyframes language {
+  from { -moz-transform: rotate(0deg) translateX($languageRadius) rotate(0deg); }
+  to   { -moz-transform: rotate(360deg) translateX($languageRadius) rotate(-360deg); }
+}
+
+@-o-keyframes language {
+  from { -o-transform: rotate(0deg) translateX($languageRadius) rotate(0deg); }
+  to   { -o-transform: rotate(360deg) translateX($languageRadius) rotate(-360deg); }
+}
+
+@keyframes language {
+  from { transform: rotate(0deg) translateX($languageRadius) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX($languageRadius) rotate(-360deg); }
+}
+
+@-webkit-keyframes cloud {
+  from { -webkit-transform: rotate(0deg) translateX($cloudRadius) rotate(0deg); }
+  to   { -webkit-transform: rotate(360deg) translateX($cloudRadius) rotate(-360deg); }
+}
+
+@-moz-keyframes cloud {
+  from { -moz-transform: rotate(0deg) translateX($cloudRadius) rotate(0deg); }
+  to   { -moz-transform: rotate(360deg) translateX($cloudRadius) rotate(-360deg); }
+}
+
+@-o-keyframes cloud {
+  from { -o-transform: rotate(0deg) translateX($cloudRadius) rotate(0deg); }
+  to   { -o-transform: rotate(360deg) translateX($cloudRadius) rotate(-360deg); }
+}
+
+@keyframes cloud {
+  from { transform: rotate(0deg) translateX($cloudRadius) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX($cloudRadius) rotate(-360deg); }
+}
