@@ -10,12 +10,19 @@ $fastapiTime: 10s;
 $djangoTime: 12s;
 
 $pythonTime: 10s;
+$rubyTime: 7s;
+$goTime: 13s;
+$javascriptTime: 16s;
+
+$dockerTime: 7s;
+$k8sTime: 13s;
 
 $awsTime: 8s;
 $gcpTime: 14s;
 
 $frameworkRadius: 180px;
 $languageRadius: 125px;
+$infrastructureRadius: 90px;
 $cloudRadius: 50px;
 
 #skills-canvas {
@@ -33,6 +40,7 @@ $cloudRadius: 50px;
   position: absolute;
   left: $meCenterLeft;
   top: $meCenterTop;
+  font-size: 50px;
 }
 
 .skill {
@@ -74,7 +82,42 @@ $cloudRadius: 50px;
           animation: language $pythonTime linear infinite; /* Chrome, Firefox 16+, 
                                                     IE 10+, Safari 5 */
 }
+.ruby {
+  -webkit-animation: language $rubyTime linear infinite; /* Chrome, Safari 5 */
+     -moz-animation: language $rubyTime linear infinite; /* Firefox 5-15 */
+       -o-animation: language $rubyTime linear infinite; /* Opera 12+ */
+          animation: language $rubyTime linear infinite; /* Chrome, Firefox 16+, 
+                                                    IE 10+, Safari 5 */
+}
+.go {
+  -webkit-animation: language $goTime linear infinite; /* Chrome, Safari 5 */
+     -moz-animation: language $goTime linear infinite; /* Firefox 5-15 */
+       -o-animation: language $goTime linear infinite; /* Opera 12+ */
+          animation: language $goTime linear infinite; /* Chrome, Firefox 16+, 
+                                                    IE 10+, Safari 5 */
+}
+.javascript {
+  -webkit-animation: language $javascriptTime linear infinite; /* Chrome, Safari 5 */
+     -moz-animation: language $javascriptTime linear infinite; /* Firefox 5-15 */
+       -o-animation: language $javascriptTime linear infinite; /* Opera 12+ */
+          animation: language $javascriptTime linear infinite; /* Chrome, Firefox 16+, 
+                                                    IE 10+, Safari 5 */
+}
 
+.docker {
+  -webkit-animation: infrastructure $dockerTime linear infinite; /* Chrome, Safari 5 */
+     -moz-animation: infrastructure $dockerTime linear infinite; /* Firefox 5-15 */
+       -o-animation: infrastructure $dockerTime linear infinite; /* Opera 12+ */
+          animation: infrastructure $dockerTime linear infinite; /* Chrome, Firefox 16+, 
+                                                    IE 10+, Safari 5 */
+}
+.k8s {
+  -webkit-animation: infrastructure $k8sTime linear infinite; /* Chrome, Safari 5 */
+     -moz-animation: infrastructure $k8sTime linear infinite; /* Firefox 5-15 */
+       -o-animation: infrastructure $k8sTime linear infinite; /* Opera 12+ */
+          animation: infrastructure $k8sTime linear infinite; /* Chrome, Firefox 16+, 
+                                                    IE 10+, Safari 5 */
+}
 
 .aws {
   -webkit-animation: cloud $awsTime linear infinite; /* Chrome, Safari 5 */
@@ -136,6 +179,28 @@ $cloudRadius: 50px;
   from { transform: rotate(0deg) translateX($languageRadius) rotate(0deg); }
   to   { transform: rotate(360deg) translateX($languageRadius) rotate(-360deg); }
 }
+
+
+@-webkit-keyframes infrastructure {
+  from { -webkit-transform: rotate(0deg) translateX($infrastructureRadius) rotate(0deg); }
+  to   { -webkit-transform: rotate(360deg) translateX($infrastructureRadius) rotate(-360deg); }
+}
+
+@-moz-keyframes infrastructure {
+  from { -moz-transform: rotate(0deg) translateX($infrastructureRadius) rotate(0deg); }
+  to   { -moz-transform: rotate(360deg) translateX($infrastructureRadius) rotate(-360deg); }
+}
+
+@-o-keyframes infrastructure {
+  from { -o-transform: rotate(0deg) translateX($infrastructureRadius) rotate(0deg); }
+  to   { -o-transform: rotate(360deg) translateX($infrastructureRadius) rotate(-360deg); }
+}
+
+@keyframes infrastructure {
+  from { transform: rotate(0deg) translateX($infrastructureRadius) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX($infrastructureRadius) rotate(-360deg); }
+}
+
 
 @-webkit-keyframes cloud {
   from { -webkit-transform: rotate(0deg) translateX($cloudRadius) rotate(0deg); }
