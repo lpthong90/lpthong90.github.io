@@ -18,6 +18,8 @@ excerpt_separator: <!--more-->
 
 ---
 
+**Documentation**: <a href="https://lpthong90.dev/python-order-matching-engine" target="_blank">https://lpthong90.dev/python-order-matching-engine</a>
+
 **Source  Code**: <a href="{{ page.repo_url }}" target="_blank">{{ page.repo_url }}</a>
 
 ---
@@ -36,8 +38,7 @@ Price levels without any related orders are removed to maintain efficiency in th
 
 ## Diagrams
 
-<!-- <img src="./images/diagram.png" alt="filter_options"/> -->
-<img src="https://github.com/lpthong90/python-order-matching-engine/blob/c12928890d71f5ea45c725217dc739fbbc1a1b80/images/diagram.png" alt="OrderMatchingEngineDiagram">
+<img src="/assets/images/projects/python-order-matching-engine-diagram.png" alt="OrderMatchingEngineDiagram">
 
 ## Models
 
@@ -77,16 +78,16 @@ class MatchingEngine:
 
 ## Complexity
 
-Assume with m is number of price levels, n is number orders in each price level, l is number of matched price levels; then we have:
+Assume with **`m`** is number of price levels, **`n`** is number orders in each price level, **`l`** is number of matched price levels.
 
 - Add new order:
-  - O(log(m)) if related price level isn't existed
-  - O(1) if otherwise
+  - **`O(log(m))`** if related price level isn't existed
+  - **`O(1)`** if otherwise
 - Cancel order:
-  - O(log(m)) if related price level is removed
-  - O(1) if otherwise
+  - **`O(log(m))`** if related price level is removed
+  - **`O(1)`** if otherwise
 - Execute order:
-  - O(n * l * log(m))
+  - **`O(n * l * log(m))`**
 
 ## References
 
