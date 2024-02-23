@@ -79,25 +79,11 @@ The package helps to generate CRUD APIs for models based on FastAPI.
 <span class="n">app</span><span class="o">.</span><span class="n">include_router</span><span class="p">(</span><span class="n">book_router</span><span class="p">)</span>
 </code></pre></div>
 
-<!-- ```Python
-from fastapi import FastAPI
-from fastcrudapi import CrudApiRouter
-from pydantic import BaseModel
+## OpenAPI
 
-app = FastAPI()
-
-
-class Book(BaseModel):
-    id: int
-    name: str
-
-
-book_router = CrudApiRouter(
-    prefix="/books",
-    schema=Book,
-)
-app.include_router(book_router)
-``` -->
+<p align="center">
+    <img src="https://fastcrudapi.lpthong90.dev/img/openapi.png" alt="OpenAPI">
+</p>
 
 <br>
 
