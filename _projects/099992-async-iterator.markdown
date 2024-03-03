@@ -1,6 +1,6 @@
 ---
 layout: project
-# logo_url: "/assets/images/projects/fastcrudapi-logo.png"
+logo_url: "/assets/images/projects/async-iterator/thumbnail.png"
 title:  async-iterator - Easy way to use async iterator without take care about asyncio’s TaskGroup
 # company: Personal Project
 repo_name: async-iterator
@@ -11,9 +11,11 @@ excerpt_separator: <!--more-->
 # to_date:   2023-05-04
 ---
 
-<!-- <p align="center">
-    <a href="https://async-iterator.lpthong90.dev"><img src="https://async-iterator.lpthong90.dev/img/logo.png" alt="FastCRUDAPI"></a>
-</p> -->
+<p align="center">
+    <a href="/assets/images/projects/099992-async-iterator.html">
+        <img class="project-thumnail-small" src="/assets/images/projects/async-iterator/thumbnail.png" alt="Async Iterator">
+    </a>
+</p>
 <p align="center">
     <em>Easy way to use async iterator without take care about asyncio’s TaskGroup</em>
 </p>

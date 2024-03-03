@@ -1,6 +1,6 @@
 ---
 layout: project
-logo_url: "/assets/images/projects/rails-messenger-logo.png"
+logo_url: "/assets/images/projects/rails-messenger/logo.png"
 title:  Rails Messenger - A Simple Way To Message
 # company: Personal Project
 repo_name: rails-messenger
@@ -12,8 +12,8 @@ excerpt_separator: <!--more-->
 ---
 
 <p align="center">
-  <a href="/assets/images/projects/rails-messenger-thumnail.png">
-    <img class="project-thumnail" src="/assets/images/projects/rails-messenger-thumnail.png" alt="Rails Messenger">
+  <a href="/assets/images/projects/rails-messenger/thumnail.png">
+    <img class="project-thumnail" src="/assets/images/projects/rails-messenger/thumnail.png" alt="Rails Messenger">
   </a>
 </p>
 <p align="center">
@@ -29,12 +29,9 @@ excerpt_separator: <!--more-->
 
 Following are several screenshots of the application:
 
-<!-- <div>
-  <img src="/assets/images/projects/rails-messenger-thumnail.png" alt="rails-messenger">
-</div> -->
-<span class="">![rails-messenger]({{ site.baseurl }}/assets/images/projects/rails-messenger-screenshot-1-signin.png)</span>
-<span class="">![rails-messenger]({{ site.baseurl }}/assets/images/projects/rails-messenger-screenshot-2-signup.png)</span>
-<span class="">![rails-messenger]({{ site.baseurl }}/assets/images/projects/rails-messenger-screenshot-3-chat.png)</span>
+<span class="">![rails-messenger]({{ site.baseurl }}/assets/images/projects/rails-messenger/screenshot-1-signin.png)</span>
+<span class="">![rails-messenger]({{ site.baseurl }}/assets/images/projects/rails-messenger/screenshot-2-signup.png)</span>
+<span class="">![rails-messenger]({{ site.baseurl }}/assets/images/projects/rails-messenger/screenshot-3-chat.png)</span>
 
 <!-- • Design, develop and monitor high performance trading bots with signals based on news.
 

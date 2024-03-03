@@ -1,6 +1,6 @@
 ---
 layout: project
-# logo_url: "/assets/images/projects/rails-messenger-logo.png"
+logo_url: "/assets/images/projects/order-matching-engine/thumbnail.jpg"
 title:  Order Matching Engine
 # company: Personal Project
 repo_name: python-order-matching-engine
@@ -12,6 +12,10 @@ excerpt_separator: <!--more-->
 ---
 
 <p align="center">
+  <a href="/projects/099988-python-order-matching-engine.html">
+      <img class="project-thumnail-small" src="/assets/images/projects/order-matching-engine/thumbnail.jpg" alt="Order Matching Engine">
+  </a> 
+  <br>
   <em>A demo project is a simple order matching engine which using double linked list and AVL tree.</em>
 </p>
 <!--more-->

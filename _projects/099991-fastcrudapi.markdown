@@ -12,7 +12,7 @@ excerpt_separator: <!--more-->
 ---
 
 <p align="center">
-    <a href="https://fastcrudapi.lpthong90.dev"><img src="https://fastcrudapi.lpthong90.dev/img/logo.png" alt="FastCRUDAPI"></a>
+    <a class="project-thumnail-small" href="https://fastcrudapi.lpthong90.dev"><img src="https://fastcrudapi.lpthong90.dev/img/logo.png" alt="FastCRUDAPI"></a>
 </p>
 <p align="center">
     <em>Super easy to generate CRUD api routes for FastAPI.</em>

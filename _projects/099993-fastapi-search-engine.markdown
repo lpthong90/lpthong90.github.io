@@ -1,6 +1,6 @@
 ---
 layout: project
-# logo_url: "/assets/images/projects/fastcrudapi-logo.png"
+logo_url: "/assets/images/projects/hr-search-engine/logo.png"
 title:  FastAPI HR Search Engine - Demo search employees feature in HR system
 # company: Personal Project
 repo_name: fastapi-search-engine
@@ -9,6 +9,11 @@ categories: Demo FastAPI Python
 excerpt_separator: <!--more-->
 ---
 
+<p align="center">
+    <a href="/assets/images/projects/099993-fastapi-search-engine.html">
+        <img class="project-thumnail-small" src="/assets/images/projects/hr-search-engine/logo.png" alt="Async Iterator">
+    </a>
+</p>
 <p align="center">
   <em>The demo project which is used FastAPI as a backend service.</em>
 </p>

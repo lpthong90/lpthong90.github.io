@@ -1,6 +1,6 @@
 ---
 layout: project
-# logo_url: "/assets/images/projects/rails-messenger-logo.png"
+logo_url: "/assets/images/projects/py-simple-trees/thumbnail.png"
 title:  py-simple-trees
 # company: Personal Project
 repo_name: py-simple-trees
@@ -12,6 +12,10 @@ excerpt_separator: <!--more-->
 ---
 
 <p align="center">
+    <a href="/projects/099989-py-simple-trees.html">
+        <img class="project-thumnail" src="/assets/images/projects/py-simple-trees/thumbnail.png" alt="Django ChatGPT">
+    </a> 
+    <br>
     <em>This package is a implementation collection of tree data structures.</em>
 </p>
 
