@@ -6,6 +6,7 @@ title:  fastcrudapi - Super easy to generate CRUD api routes for FastAPI
 repo_name: fastcrudapi
 repo_url: https://github.com/lpthong90/fastcrudapi
 categories: Lib FastAPI Python 
+category_classs: lib fastapi python
 excerpt_separator: <!--more-->
 # from_date:   2023-05-02
 # to_date:   2023-05-04

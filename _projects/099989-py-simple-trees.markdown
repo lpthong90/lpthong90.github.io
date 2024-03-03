@@ -6,6 +6,7 @@ title:  py-simple-trees
 repo_name: py-simple-trees
 repo_url: https://github.com/lpthong90/py-simple-trees
 categories: Lib Algorithm Python
+category_classs: lib algorithm python
 excerpt_separator: <!--more-->
 # from_date:   2023-05-02
 # to_date:   2023-05-04

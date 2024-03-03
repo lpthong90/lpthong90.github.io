@@ -5,7 +5,8 @@ title:  async-iterator - Easy way to use async iterator without take care about 
 # company: Personal Project
 repo_name: async-iterator
 repo_url: https://github.com/lpthong90/async-iterator
-categories: Lib Asyncio Python 
+categories: Lib Asyncronous Python 
+categories: lib asyncronous python 
 excerpt_separator: <!--more-->
 # from_date:   2023-05-02
 # to_date:   2023-05-04

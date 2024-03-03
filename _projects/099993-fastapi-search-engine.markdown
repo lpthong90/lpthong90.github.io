@@ -6,6 +6,7 @@ title:  FastAPI HR Search Engine - Demo search employees feature in HR system
 repo_name: fastapi-search-engine
 repo_url: https://github.com/lpthong90/fastapi-search-engine
 categories: Demo FastAPI Python 
+categories: demo fastapi python 
 excerpt_separator: <!--more-->
 ---
 

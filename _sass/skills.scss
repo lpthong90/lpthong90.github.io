@@ -51,7 +51,7 @@ $cloudRadius: 50px;
   top: $meCenterTop;
 }
 
-.ror {
+.skill-ror {
   -webkit-animation: framework $rorTime linear infinite; /* Chrome, Safari 5 */
      -moz-animation: framework $rorTime linear infinite; /* Firefox 5-15 */
        -o-animation: framework $rorTime linear infinite; /* Opera 12+ */
@@ -59,7 +59,7 @@ $cloudRadius: 50px;
                                                     IE 10+, Safari 5 */
 }
 
-.fastapi {
+.skill-fastapi {
   -webkit-animation: framework $fastapiTime linear infinite; /* Chrome, Safari 5 */
      -moz-animation: framework $fastapiTime linear infinite; /* Firefox 5-15 */
        -o-animation: framework $fastapiTime linear infinite; /* Opera 12+ */
@@ -67,7 +67,7 @@ $cloudRadius: 50px;
                                                     IE 10+, Safari 5 */
 }
 
-.django {
+.skill-django {
   -webkit-animation: framework $djangoTime linear infinite; /* Chrome, Safari 5 */
      -moz-animation: framework $djangoTime linear infinite; /* Firefox 5-15 */
        -o-animation: framework $djangoTime linear infinite; /* Opera 12+ */
@@ -75,28 +75,28 @@ $cloudRadius: 50px;
                                                     IE 10+, Safari 5 */
 }
 
-.python {
+.skill-python {
   -webkit-animation: language $pythonTime linear infinite; /* Chrome, Safari 5 */
      -moz-animation: language $pythonTime linear infinite; /* Firefox 5-15 */
        -o-animation: language $pythonTime linear infinite; /* Opera 12+ */
           animation: language $pythonTime linear infinite; /* Chrome, Firefox 16+, 
                                                     IE 10+, Safari 5 */
 }
-.ruby {
+.skill-ruby {
   -webkit-animation: language $rubyTime linear infinite; /* Chrome, Safari 5 */
      -moz-animation: language $rubyTime linear infinite; /* Firefox 5-15 */
        -o-animation: language $rubyTime linear infinite; /* Opera 12+ */
           animation: language $rubyTime linear infinite; /* Chrome, Firefox 16+, 
                                                     IE 10+, Safari 5 */
 }
-.go {
+.skill-go {
   -webkit-animation: language $goTime linear infinite; /* Chrome, Safari 5 */
      -moz-animation: language $goTime linear infinite; /* Firefox 5-15 */
        -o-animation: language $goTime linear infinite; /* Opera 12+ */
           animation: language $goTime linear infinite; /* Chrome, Firefox 16+, 
                                                     IE 10+, Safari 5 */
 }
-.javascript {
+.skill-javascript {
   -webkit-animation: language $javascriptTime linear infinite; /* Chrome, Safari 5 */
      -moz-animation: language $javascriptTime linear infinite; /* Firefox 5-15 */
        -o-animation: language $javascriptTime linear infinite; /* Opera 12+ */
@@ -104,14 +104,14 @@ $cloudRadius: 50px;
                                                     IE 10+, Safari 5 */
 }
 
-.docker {
+.skill-docker {
   -webkit-animation: infrastructure $dockerTime linear infinite; /* Chrome, Safari 5 */
      -moz-animation: infrastructure $dockerTime linear infinite; /* Firefox 5-15 */
        -o-animation: infrastructure $dockerTime linear infinite; /* Opera 12+ */
           animation: infrastructure $dockerTime linear infinite; /* Chrome, Firefox 16+, 
                                                     IE 10+, Safari 5 */
 }
-.k8s {
+.skill-k8s {
   -webkit-animation: infrastructure $k8sTime linear infinite; /* Chrome, Safari 5 */
      -moz-animation: infrastructure $k8sTime linear infinite; /* Firefox 5-15 */
        -o-animation: infrastructure $k8sTime linear infinite; /* Opera 12+ */
@@ -119,14 +119,14 @@ $cloudRadius: 50px;
                                                     IE 10+, Safari 5 */
 }
 
-.aws {
+.skill-aws {
   -webkit-animation: cloud $awsTime linear infinite; /* Chrome, Safari 5 */
      -moz-animation: cloud $awsTime linear infinite; /* Firefox 5-15 */
        -o-animation: cloud $awsTime linear infinite; /* Opera 12+ */
           animation: cloud $awsTime linear infinite; /* Chrome, Firefox 16+, 
                                                     IE 10+, Safari 5 */
 }
-.gcp {
+.skill-gcp {
   -webkit-animation: cloud $gcpTime linear infinite; /* Chrome, Safari 5 */
      -moz-animation: cloud $gcpTime linear infinite; /* Firefox 5-15 */
        -o-animation: cloud $gcpTime linear infinite; /* Opera 12+ */

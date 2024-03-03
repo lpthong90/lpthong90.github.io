@@ -6,6 +6,7 @@ title:  Django - OpenAI ChatGPT
 repo_name: django-chatgpt
 repo_url: https://github.com/lpthong90/django-chatgpt
 categories: Demo Django Python
+category_classs: demo django python
 excerpt_separator: <!--more-->
 # from_date:   2023-05-02
 # to_date:   2023-05-04

@@ -5,7 +5,8 @@ title:  Rails - Ethereum Explorer
 # company: Personal Project
 repo_name: rails-ethereum-tx-explorer
 repo_url: https://github.com/lpthong90/rails-ethereum-tx-explorer
-categories: Demo RubyOnRails
+categories: Demo Hotwire RubyOnRails Ruby
+category_classs: demo hotwire rubyonrails ruby
 excerpt_separator: <!--more-->
 # from_date:   2023-05-02
 # to_date:   2023-05-04
@@ -15,7 +16,8 @@ excerpt_separator: <!--more-->
   <a href="/projects/099986-rails-ethereum-explorer.html">
     <img class="project-thumnail" src="/assets/images/projects/rails-ethereum-explorer/img.png" alt="Rails Ethereum Explorer">
   </a>
-  <br>
+</p>
+<p align="center">
   <em>Using Ruby on Rails to demo a simple version of <a href="https://etherscan.io/" target="_blank">Etherscan</a>.</em>
 </p>
 <!--more-->
