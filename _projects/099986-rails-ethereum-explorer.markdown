@@ -6,7 +6,7 @@ title:  Rails - Ethereum Explorer
 repo_name: rails-ethereum-tx-explorer
 repo_url: https://github.com/lpthong90/rails-ethereum-tx-explorer
 categories: Demo Hotwire RubyOnRails Ruby
-category_classs: demo hotwire rubyonrails ruby
+category_classes: demo hotwire rubyonrails ruby
 excerpt_separator: <!--more-->
 # from_date:   2023-05-02
 # to_date:   2023-05-04

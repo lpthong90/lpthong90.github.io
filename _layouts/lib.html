@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<!-- {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%} -->
+<div class="post-container">
+  <a class="post-link" href="{{ page.url | relative_url }}">
+    <h2 class="post-title">
+      {%- if page.logo_url -%}
+        <img class="project-logo" src="{{ page.logo_url | relative_url }}" alt="{{ page.title | escape }}">
+      {%- endif -%}
+      <span> {{ page.title | escape }}</span></h2>
+  </a>
+  {%- if page.company -%}
+    <p>Company: <a class="post-link" href="{{ page.company_url | relative_url }}">
+      <b>{{ page.company | escape }}</b>
+    </a></p>
+  {%- endif -%}
+  {%- if page.repo_url -%}
+  <p>Repo: <a href="{{ page.repo_url }}">
+    <b>{{ site.plainwhite.social_links.github }}/{{ page.repo_name | escape }}</b>
+  </a></p>
+  <br>
+  {%- endif -%}
+  <div class="post-meta">
+    <div class="post-date"></div>
+    <ul class="post-categories">
+      {%- for tag in page.categories -%}
+      <li>{{ tag }}</li>
+      {%- endfor -%}
+    </ul>
+  </div>
+  <div class="post">
+    {{ content }}
+  </div>
+  {%- if site.plainwhite.disqus_shortname -%}
+  <div id="disqus_thread" style="margin-top:25px"></div>
+    <script>
+      var disqus_config = function () {
+        this.page.url = '{{ page.url | absolute_url }}';
+        this.page.identifier = '{{ page.url | absolute_url }}';
+      };
+      (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://{{ site.plainwhite.disqus_shortname }}.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </div>
+  {%- endif -%}
+</div>

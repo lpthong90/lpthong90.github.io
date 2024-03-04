@@ -204,6 +204,21 @@ main {
   position: absolute;
   left: 50%;
 }
+.lib-logo {
+  width: 25px;
+  height: 25px;
+}
+.lib-thumnail {
+  width: 300px;
+}
+.lib-thumnail-small {
+  width: 150px;
+}
+.lib-thubnail-center {
+  display:block;
+  position: absolute;
+  left: 50%;
+}
 
 #posts-label {
 	border-bottom: 1px solid #eee;

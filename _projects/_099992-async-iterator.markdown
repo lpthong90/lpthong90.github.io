@@ -116,3 +116,6 @@ sync [2, 3, 4]
 ## License
 
 This project is licensed under the terms of the [MIT license](https://github.com/lpthong90/async-iterator/blob/main/LICENSE).
+
+
+<script src="{{ "/assets/js/termynal.js" | relative_url }}" data-termynal-container="#termynal"></script>

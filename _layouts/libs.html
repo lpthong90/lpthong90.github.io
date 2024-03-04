@@ -8,44 +8,33 @@ layout: default
 
 {{ content }}
 
-{%- if site.projects.size > 0 -%}
+{%- if site.libs.size > 0 -%}
 <div class="posts">
 	<div>
-		<h1 id="posts-label">Projects</h1>
+		<h1 id="posts-label">Libraries</h1>
 	</div>
 	<div>
 		<div class="button-group filters-button-group">
 			<button class="button is-checked" data-filter="*">All</button>
-			<button class="button" data-filter=".rubyonrails">RubyOnRails</button>
-			<button class="button" data-filter=".django">Django</button>
 			<button class="button" data-filter=".python">Python</button>
 			<button class="button" data-filter=".ruby">Ruby</button>
-			<button class="button" data-filter=".hotwire">Hotwire</button>
-			<button class="button" data-filter=".algorithm">Algorithm</button>
-			<!-- <button class="button" data-filter=".demo">Demo</button> -->
-			<!-- <button class="button" data-filter=".lib">Lib</button> -->
 		</div>
 
 		<div class="grid">
-			{%- for project in site.projects -%}
-				<div class="element-item {{ project.category_classes }}">
-					<a class="post-link" href="{{ project.url | relative_url }}">
+			{%- for lib in site.libs -%}
+				<div class="element-item {{ lib.category_classes }}">
+					<a class="post-link" href="{{ lib.url | relative_url }}">
 						<h2 class="post-title">
-							{%- if project.logo_url -%}
-								<img class="project-logo" src="{{ project.logo_url | relative_url }}" alt="{{ project.title | escape }}">
+							{%- if lib.logo_url -%}
+								<img class="lib-logo" src="{{ lib.logo_url | relative_url }}" alt="{{ lib.title | escape }}">
 							{%- endif -%}
-							<span> {{ project.title | escape }}</span></h2>
+							<span> {{ lib.title | escape }}</span></h2>
 					</a>
 
 					<p>
-						{%- if project.company -%}
-							Company: <a class="post-link" href="{{ project.company_url | relative_url }}">
-							<b>{{ project.company | escape }}</b>
-						</a>
-						{%- endif -%}
-						{%- if project.repo_url -%}
-						Repo: <a href="{{ project.repo_url }}">
-							<b>{{ site.plainwhite.social_links.github }}/{{ project.repo_name | escape }}</b>
+						{%- if lib.repo_url -%}
+						Repo: <a href="{{ lib.repo_url }}">
+							<b>{{ site.plainwhite.social_links.github }}/{{ lib.repo_name | escape }}</b>
 						</a>
 						{%- endif -%}
 					</p>
@@ -53,7 +42,7 @@ layout: default
 					<div class="post-meta">
 						<div class="post-date"></div>
 						<ul class="post-categories">
-							{%- for tag in project.categories -%}
+							{%- for tag in lib.categories -%}
 							<li>{{ tag }}</li>
 							{%- endfor -%}
 						</ul>
@@ -61,7 +50,7 @@ layout: default
 
 					<div class="post">
 						{%- if site.show_excerpts -%}
-						{{ project.excerpt }}
+						{{ lib.excerpt }}
 						{%- endif -%}
 					</div>
 

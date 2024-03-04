@@ -6,7 +6,7 @@ title:  Order Matching Engine
 repo_name: python-order-matching-engine
 repo_url: https://github.com/lpthong90/python-order-matching-engine
 categories: Demo Algorithm Python
-category_classs: demo algorithm python
+category_classes: demo algorithm python
 excerpt_separator: <!--more-->
 # from_date:   2023-05-02
 # to_date:   2023-05-04

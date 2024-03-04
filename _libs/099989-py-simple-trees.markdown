@@ -1,20 +1,19 @@
 ---
-layout: project
+layout: lib
 logo_url: "/assets/images/projects/py-simple-trees/thumbnail.png"
 title:  py-simple-trees
-# company: Personal Project
 repo_name: py-simple-trees
 repo_url: https://github.com/lpthong90/py-simple-trees
 categories: Lib Algorithm Python
-category_classs: lib algorithm python
+category_classes: lib algorithm python
 excerpt_separator: <!--more-->
 # from_date:   2023-05-02
 # to_date:   2023-05-04
 ---
 
 <p align="center">
-    <a href="/projects/099989-py-simple-trees.html">
-        <img class="project-thumnail" src="/assets/images/projects/py-simple-trees/thumbnail.png" alt="Django ChatGPT">
+    <a href="/libs/099989-py-simple-trees.html">
+        <img class="lib-thumnail" src="/assets/images/projects/py-simple-trees/thumbnail.png" alt="Django ChatGPT">
     </a> 
     <br>
     <em>This package is a implementation collection of tree data structures.</em>
@@ -102,3 +101,5 @@ Output
 ## License
 
 This project is licensed under the terms of the [MIT license](https://github.com/lpthong90/py-simple-trees/blob/main/LICENSE).
+
+<script src="{{ "/assets/js/termynal.js" | relative_url }}" data-termynal-container="#termynal"></script>

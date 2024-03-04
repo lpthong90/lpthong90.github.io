@@ -1,0 +1,144 @@
+---
+layout: default
+---
+
+{%- if page.title -%}
+<h1 class="page-heading">{{ page.title }}</h1>
+{%- endif -%}
+
+{{ content }}
+
+{%- if site.projects.size > 0 -%}
+<ul class="posts">
+	<li>
+		<h1 id="posts-label">Projects</h1>
+	</li>
+	<li>
+		<h1>Isotope - filtering</h1>
+
+		<div class="button-group filters-button-group">
+			<button class="button is-checked" data-filter="*">show all</button>
+			<button class="button" data-filter=".rubyonrails">rubyonrails</button>
+			<button class="button" data-filter=".demo">demo</button>
+		</div>
+
+		<div class="grid">
+			<!-- <div class="element-item rubyonrails ">
+				<h3 class="name">Mercury</h3>
+			</div>
+			<div class="element-item demo">
+				<h3 class="name">Tellurium</h3>
+			</div> -->
+			{%- for project in site.projects -%}
+				<div class="element-item {{ project.category_classs }}">
+					<a class="post-link" href="{{ project.url | relative_url }}">
+						<h2 class="post-title">
+							{%- if project.logo_url -%}
+								<img class="project-logo" src="{{ project.logo_url | relative_url }}" alt="{{ project.title | escape }}">
+							{%- endif -%}
+							<span> {{ project.title | escape }}</span></h2>
+					</a>
+
+					<p>
+						{%- if project.company -%}
+							Company: <a class="post-link" href="{{ project.company_url | relative_url }}">
+							<b>{{ project.company | escape }}</b>
+						</a>
+						{%- endif -%}
+						{%- if project.repo_url -%}
+						<!-- <a href="https://github.com/{{ site.plainwhite.social_links.github }}/{{ project.repo_name }}"><i style="font-size: 34px" class="fab fa-github-square"></i> {{ site.plainwhite.social_links.github }}/{{ project.repo_name }} </a> -->
+						Repo: <a href="{{ project.repo_url }}">
+							<b>{{ site.plainwhite.social_links.github }}/{{ project.repo_name | escape }}</b>
+						</a>
+						{%- endif -%}
+					</p>
+
+					<div class="post-meta">
+						<!-- <div class="post-date"><i class="icon-calendar"></i>{{ project.from_date | date: date_format }} - {{ project.to_date | date: date_format }}</div> -->
+						<div class="post-date"></div>
+						<ul class="post-categories">
+							{%- for tag in project.categories -%}
+							<li>{{ tag }}</li>
+							{%- endfor -%}
+						</ul>
+					</div>
+
+					<div class="post">
+						{%- if site.show_excerpts -%}
+						{{ project.excerpt }}
+						{%- endif -%}
+					</div>
+
+				</div>
+			{%- endfor -%}
+		</div>
+
+	<div class="grid"></div>
+		{%- for project in site.projects -%}
+			<div class="element-item {{ project.category_classs }}">
+				<!-- {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%} -->
+				<a class="post-link" href="{{ project.url | relative_url }}">
+					<h2 class="post-title">
+						{%- if project.logo_url -%}
+							<img class="project-logo" src="{{ project.logo_url | relative_url }}" alt="{{ project.title | escape }}">
+						{%- endif -%}
+						<span> {{ project.title | escape }}</span></h2>
+				</a>
+				<p>
+					{%- if project.company -%}
+						Company: <a class="post-link" href="{{ project.company_url | relative_url }}">
+						<b>{{ project.company | escape }}</b>
+					</a>
+					{%- endif -%}
+					{%- if project.repo_url -%}
+					<!-- <a href="https://github.com/{{ site.plainwhite.social_links.github }}/{{ project.repo_name }}"><i style="font-size: 34px" class="fab fa-github-square"></i> {{ site.plainwhite.social_links.github }}/{{ project.repo_name }} </a> -->
+					Repo: <a href="{{ project.repo_url }}">
+						<b>{{ site.plainwhite.social_links.github }}/{{ project.repo_name | escape }}</b>
+					</a>
+					{%- endif -%}
+				</p>
+				<div class="post-meta">
+					<!-- <div class="post-date"><i class="icon-calendar"></i>{{ project.from_date | date: date_format }} - {{ project.to_date | date: date_format }}</div> -->
+					<div class="post-date"></div>
+					<ul class="post-categories">
+						{%- for tag in project.categories -%}
+						<li>{{ tag }}</li>
+						{%- endfor -%}
+					</ul>
+				</div>
+				<div class="post">
+					{%- if site.show_excerpts -%}
+					{{ project.excerpt }}
+					{%- endif -%}
+				</div>
+			</div>
+		{%- endfor -%}
+	</div>
+</ul>
+
+{%- endif -%}
+
+<script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+	<script>
+		// external js: isotope.pkgd.js
+
+		// init Isotope
+		var $grid = $('.grid').isotope({
+			itemSelector: '.element-item',
+			layoutMode: 'fitRows'
+		});
+		// bind filter button click
+		$('.filters-button-group').on( 'click', 'button', function() {
+			var filterValue = $( this ).attr('data-filter');
+			$grid.isotope({ filter: filterValue });
+		});
+		// change is-checked class on buttons
+		$('.button-group').each( function( i, buttonGroup ) {
+			var $buttonGroup = $( buttonGroup );
+			$buttonGroup.on( 'click', 'button', function() {
+				$buttonGroup.find('.is-checked').removeClass('is-checked');
+				$( this ).addClass('is-checked');
+			});
+		});
+	</script>
