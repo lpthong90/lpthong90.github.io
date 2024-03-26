@@ -1,11 +1,11 @@
 ---
 layout: project
 logo_url: "/assets/images/projects/fastcrudapi-logo.png"
-title:  fastcrudapi - Super easy to generate CRUD api routes for FastAPI
+title: fastcrudapi - Super easy to generate CRUD api routes for FastAPI
 # company: Personal Project
 repo_name: fastcrudapi
 repo_url: https://github.com/lpthong90/fastcrudapi
-categories: Lib FastAPI Python 
+categories: Lib FastAPI Python
 category_classes: lib fastapi python
 excerpt_separator: <!--more-->
 # from_date:   2023-05-02
@@ -46,13 +46,14 @@ excerpt_separator: <!--more-->
 
 **Documentation**: <a href="https://fastcrudapi.lpthong90.dev" target="_blank">https://fastcrudapi.lpthong90.dev</a>
 
-**Source  Code**: <a href="https://github.com/lpthong90/fastcrudapi" target="_blank">https://github.com/lpthong90/fastcrudapi</a>
+**Source Code**: <a href="https://github.com/lpthong90/fastcrudapi" target="_blank">https://github.com/lpthong90/fastcrudapi</a>
 
 ---
 
 The package helps to generate CRUD APIs for models based on FastAPI.
 
 ## Installation
+
 <div id="termynal" class="termy" data-termynal>
     <span data-ty="input">pip install fastcrudapi</span>
     <span data-ty="progress"></span>
@@ -67,15 +68,13 @@ The package helps to generate CRUD APIs for models based on FastAPI.
 
 <span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
 
-
 <span class="k">class</span> <span class="nc">Book</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-    <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
-
+<span class="nb">id</span><span class="p">:</span> <span class="nb">int</span>
+<span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
 
 <span class="n">book_router</span> <span class="o">=</span> <span class="n">CrudApiRouter</span><span class="p">(</span>
-    <span class="n">prefix</span><span class="o">=</span><span class="s2">"/books"</span><span class="p">,</span>
-    <span class="n">schema</span><span class="o">=</span><span class="n">Book</span><span class="p">,</span>
+<span class="n">prefix</span><span class="o">=</span><span class="s2">"/books"</span><span class="p">,</span>
+<span class="n">schema</span><span class="o">=</span><span class="n">Book</span><span class="p">,</span>
 <span class="p">)</span>
 <span class="n">app</span><span class="o">.</span><span class="n">include_router</span><span class="p">(</span><span class="n">book_router</span><span class="p">)</span>
 </code></pre></div>
